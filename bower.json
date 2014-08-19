@@ -1,0 +1,19 @@
+{
+  "name": "interceptors-angularjs",
+  "version": "0.0.0",
+  "authors": [
+    "pedrombafonso <mail@pedroafonso.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.22",
+    "bootstrap": "~3.2.0"
+  }
+}
