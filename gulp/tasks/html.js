@@ -7,14 +7,14 @@ var templateCache = require('gulp-angular-templatecache');
 var path = require('path');
 
 var templates = {
-  src: ['./app/html/**/*.html'],
+  src: ['./app/templates/**/*.html'],
   dst: path.resolve('dist', 'js')
 };
 
 gulp.task('templates', ['clean'], function () {
   return gulp.src(templates.src)
     .pipe(templateCache({
-      root:   'html',
+      root:   'templates',
       module: 'app'
     }))
     // .pipe(streamify())

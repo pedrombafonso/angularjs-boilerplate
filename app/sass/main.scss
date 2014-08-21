@@ -1,8 +1,4 @@
-/* @import "base*"; */
-/* @import "modules*"; */
+@import "variables";
 
-$color: white;
-
-body {
-  background-color : $color;
-}
+@import "layout/body";
+@import "layout/footer";

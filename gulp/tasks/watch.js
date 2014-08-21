@@ -5,9 +5,9 @@ var concat = require('gulp-concat');
 
 var watch = {
   js: ['app/js/**/*.js'],
-  templates: ['app/html/**/*.html'],
+  templates: ['app/templates/**/*.html'],
   sass: ['app/sass/**/*.scss'],
-  index: ['app/index.html'],
+  index: ['app/templates/index.html'],
   bower: ['app/components/**/*.*']
 };
 

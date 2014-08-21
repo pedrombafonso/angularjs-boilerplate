@@ -1,0 +1,54 @@
+<!doctype html>
+<html ng-app="app" ng-controller="AppCtrl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="language" content="english">
+  <title ng-bind="pageTitle"></title>
+
+  <!-- social media tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@joshdmiller">
+  <meta name="twitter:title" content="ngBoilerplate">
+  <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+  <meta name="twitter:creator" content="@joshdmiller">
+  <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+  <meta property="og:title" content="ngBoilerplate" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+  <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+  <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+
+  <!-- STYLES -->
+  <!-- Twitter Bootstrap -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/lumen/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- NAVIGATION -->
+    <header ui-view="header"></header>
+
+    <!-- MAIN CONTENT -->
+    <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view="main"></div>
+  </div>
+
+  <footer id="footer" ui-view="footer"></footer>
+
+  <!-- SCRIPTS -->
+  <!-- jQuery -->
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <!-- AngularJS -->
+  <script src="/lib/angularjs/angular.min.js"></script>
+  <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- Twitter Bootstrap -->
+  <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- App -->
+  <script src="/js/app.js"></script>
+  <script src="/js/templates.js"></script>
+</body>
+
+</html>

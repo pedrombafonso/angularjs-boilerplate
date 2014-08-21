@@ -4,11 +4,11 @@ var gulp = require('gulp');
 var path = require('path');
 
 var index = {
-  src: path.resolve('app', 'index.html'),
+  src: [path.resolve('app', 'templates', 'index.html')],
   dst: path.resolve('dist')
 };
 
 gulp.task('index', [], function () {
-  gulp.src(index.src)
+  return gulp.src(index.src)
     .pipe(gulp.dest(index.dst));
 });
